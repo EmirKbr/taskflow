@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+@layer base {
+  :root{
+    --color-primary: #842A3B
+  }
+}
+
+html,
+body,
+#app {
+  @apply min-h-screen bg-[#F8F4EC];
+}
+
+.errorMsg {
+  @apply pl-4 text-xs text-red-500 italic;
+}
+
+.loadingMd {
+  @apply loading loading-spinner loading-md;
+}
+
+.center {
+  @apply flex flex-col items-center justify-center;
+}
